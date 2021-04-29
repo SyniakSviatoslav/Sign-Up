@@ -7,7 +7,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -17,44 +17,56 @@
 
 	<div class="main">
 		<div class="content">
-			<div class="title">
-				<button class="Sign Up">
-					Sign up with Google
-				</button>
-				<img src="images/facebook.svg">
-				<img src="images/twitter.svg">
-			</div>
+			<img src="images/BG-IMG.svg" class="picture">
 			<div class="form">
-				<form action"http://localhost:4000" method="POST">
-					<div class="field">
-						<input type="text" name="fullName" id="fullName" placeholder="Full Name" />
+				<p> Sign up to Workspace</p>
+				<div class="title">
+					<button class="SignUp">
+						<img src="images/Vector.svg" class="logo">
+						Sign up with Google
+					</button>
+					<img src="images/facebook.svg" class="icon">
+					<img src="images/twitter.svg" class="icon">
+				</div>
+				<div class="fields">
+					<div class="mainfields">
+						<form action"http://localhost:4000" method="POST" class="action">
+							<div class="field">
+								<input type="text" name="fullName" id="fullName" placeholder="Full Name" class="input" />
+							</div>
+
+							<div class="field">
+								<input type="text" name="Username" id="Username" placeholder="Username" class="input" />
+							</div>
 					</div>
 
 					<div class="field">
-						<input type="text" name="Username" id="Username" placeholder="Username" />
+						<input type="text" name="Email" id="Email" placeholder="Email" class="input"/>
 					</div>
 
 					<div class="field">
-						<input type="password" name="password" id="password" placeholder="password" />
+						<input type="password" name="password" id="password" placeholder="password" class="input" required/>
 					</div>
 
 					<div class="field">
 						<label>
+							<input type="checkbox" name="conditions" id="conditions" />
 							Creating an account means you’re okay with our Terms of Service,
 							Privacy Policy, and our default Notification Settings.
-							<input type="checkbox" name="conditions" id="conditions" />
 						</label>
-						<button type="submit">Create Account</button>
 					</div>
+				</div>
+
+				
+
+				</form>
+				<button type="submit" class="submit">Create Account</button>
+
 			</div>
-
-
-
-			</form>
 		</div>
 
 
-		<img src="images/BG-IMG.svg" class="picture">
+
 	</div>
 
 
