@@ -1,0 +1,29 @@
+/* Mixins are going next */
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; }
+
+*::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #212121; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border-radius: 4px; }
+
+body {
+  margin: 0; }
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 161px 80px 139px 80px; }
+
+.main {
+  height: 778px;
+  width: 660px;
+  background-color: white; }
+
+/*# sourceMappingURL=main.css.map */

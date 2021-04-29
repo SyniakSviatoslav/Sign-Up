@@ -1,0 +1,35 @@
+@import "./base/core";
+
+* {
+   font-family: $primaryFont;
+   box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: $black-theme-light;
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: $icon-color;
+  border-radius: 4px;
+}
+
+body {
+ margin: 0;
+}
+
+ 
+ .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 161px 80px 139px 80px;
+ }
+ 
+ .main {
+   height: 778px;
+   width: 660px;
+   background-color: white;
+ }
+
