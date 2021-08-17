@@ -28,7 +28,7 @@ h2{
   font-weight: bold;
   color: white;
 }
-  .coming-soon{
+  .offer{
     color: white;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@ h2{
    padding: 30px;
    border-radius: 30px;
   }
-  .countdown{
+  .timer{
     display: flex;
     justify-content: space-around;
     text-align: center;
