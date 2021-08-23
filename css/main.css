@@ -1,6 +1,9 @@
 /* Mixins are going next */
 * {
   font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 *::-webkit-scrollbar {
@@ -14,114 +17,118 @@
 
 body {
   margin: 0; 
-background-image: url(/images/BG-IMG.svg);}
-  
-.container{
+  background-image: url(/images/BG-IMG.svg);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
+  align-items: center;
+  min-height: 100vh;}
+  
+:root {
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
 }
 
-h2{
-  font-size: 3rem;
-  font-weight: bold;
+.title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.SignUp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #007bff;
+  border-radius: 10px;
+  border: none;
   color: white;
 }
-  .offer{
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background: rgba(133, 115, 115, 0.952); /* fallback color */
-   background: rgba(140, 124, 124, 0.5);
-   padding: 30px;
-   border-radius: 30px;
-  }
-  .timer{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    width: 80%;
-  }
 
-  .day,
-  .hour,
-  .minute,
-  .second{
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
+.logo{
+  margin-right: 8px;
+}
 
+.container {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
 
 .form {
-  margin-left: 100px;
-  width: 460px;
-  height: 545px;
-  background-color: white;
-  border-radius: 30px; }
+  padding: 10px 20px;
+}
 
-p {
-  font-size: 28px;
-  font-weight: bold;
-  padding-left: 30px; }
+.form h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
 
-.title {
-  display: flex;
-  align-content: center;
-  padding-left: 30px; }
+}
 
-.icon {
-  margin-left: 10px; }
+.field {
+  margin-bottom: 5px;
 
-.logo {
-  margin-right: 10px; }
+}
 
-.SignUp {
-  display: flex;
-  align-items: center;
-  background-color: #0C93DF;
-  color: white;
-  padding-left: 20px 20px;
-  border-radius: 17px;
-  border: none; }
+.field label {
+  display: block;
+  color: #777;
+  margin-bottom: 5px;
+}
 
-.action {
-  display: flex; }
+.field input {
+  border: solid 2px #f0f0f0;
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+}
 
-.fields {
-  margin-top: 20px;
-  padding-left: 30px; }
+.field input:focus {
+  outline: none;
+}
 
-.input {
-  padding-left: 20px;
-  width: 160px;
-  height: 40px;
-  background-color: white;
-  border-radius: 5px;
-  border-color: #9A9A9A;
-  margin-top: 20px; }
+.field.error input {
+  border-color: var(--error-color);
+}
 
-#Username {
-  margin-left: 20px; }
+.field.success input {
+  border-color: var(--success-color);
+}
 
-#conditions {
-  margin-top: 15px; }
 
-.submit {
-  margin-top: 50px;
-  margin-left: 25px;
-  background-color: #005B82;
-  color: white;
-  height: 39px;
-  width: 140px;
-  border: none;
-  border-radius: 15px; }
+.field small {
+  color: var(--error-color);
+}
 
-.terms {
-  color: red; }
 
-/*# sourceMappingURL=main.css.map */
+/* button */
+.btn {
+  width: 100%;
+  padding: 3%;
+  background: #007bff;
+  border-bottom: 2px solid #007bff;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: #0069d9;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
